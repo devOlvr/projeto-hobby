@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VoleiSports | Página Inicial</title>
+
+    <script src="./js/sessao.js"></script>
+
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="icon" href="./assets/imgs/bola.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+
+<body>
+    <div class="header">
+      <div class="container">
+        <h1 class="titulo">VoleiSports</h1>
+        <ul class="navbar">
+          <li class="agora">
+            <b><a href="#">Inicial</a></b>
+          </li>
+          <li>|</li>
+          <li>
+            <b><a href="login.html">Login</a></b>
+          </li>
+          <li>
+            <b><a href="cadastro.html">Cadastro</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="banner">
+      <div class="container">
+        <div class="quadro">
+          <a href="#sobre">
+          <img src="./assets/imgs/sobre_mim.jpg" alt="">
+        </a>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="quadro">
+          <a href="#contato">
+          <img src="./assets/imgs/contato.jpg" alt="">
+        </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="social" id="sobre">
+      <div class="container">
+        <div class="boxes">
+
+          <div class="box">
+            <h2>SOBRE MIM</h2>
+            <p>Me chamo Gabriel Oliveira Teixeira, tenho 18 anos, curso Sistemas de Informação na São Paulo Tech School, sou apaixonado por vôlei tão quanto sou por programação.</p>
+          </div>
+
+          <div class="foto">
+            <img src="./assets/imgs/foto_desenvolvedor.jpeg">
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contato" class="contato">
+      <div class="titulo">
+          <h1>Contate-nos</h1>
+          <div class="cards">
+              <div class="cardsP">
+                  <input type="text" required id="input_nome" placeholder="Nome">
+                  <input type="text" required id="input_sobrenome" placeholder="Sobrenome">
+              </div>
+              <div class="cardsP">
+                  <input type="email" required id="input_email" placeholder="Email">
+                  <input type="telefone" required id="input_telefone" placeholder="Telefone">
+              </div>
+          </div>
+          <div class=" cardsU">
+              <input type="text" id="input_msg" required placeholder="Digite aqui sua mensagem">
+            </div>
+            
+           <div class="botao_enviar">
+            <button onclick="enviar()">Enviar</button>
+          </div>
+
+      </div>
+  </div>
+
+    <div class="footer">
+      <div class="container">
+        <h4>Feito por Gabriel Oliveira Teixeira &hearts; SPTech &copy; 2024</h4>
+        <span class="version">v1.2.0</span>
+      </div>
+    </div>
+    
+  </body>
+  
+</html>
+
+<script>
+  function enviar() {
+      input_nome.value = '';
+      input_sobrenome.value = '';
+      input_email.value = '';
+      input_telefone.value = '';
+      input_msg.value = '';
+  }
+</script>

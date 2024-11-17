@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoleiSportsDesenho</title>
+    <link rel="stylesheet" href="../css/tela_desenho.css">
+</head>
+<body>
+    <div class="personagem-titulo">
+        <h1>Personagens</h1>
+    </div>
+
+    <div id="1" class="hinata">
+        <h2>Shoyo Hinata</h2>
+    <div class="personagens">
+        <img src="../assets/imgs/haikyuu/hinata.png">
+       <p>
+            Idade: 16 Anos<br>
+            Altura: 162cm<br>
+            Salto: 333cm<br>
+            Posição: Central<br>
+        </p>
+    </div>
+</div>
+
+<div id="2" class="hinata" style="display: none;">
+    <h2>Tobio Kageyama</h2>
+    <div class="personagens">
+        <img src="../assets/imgs/haikyuu/kageyama.png" alt="">
+        <p>
+            Idade: 16 Anos<br>
+            Altura: 181cm<br>
+            Salto: 335cm<br>
+            Posição: Levantador<br>
+        </p>
+    </div>
+</div>
+
+<div id="3" class="hinata" style="display: none;">
+    <h2>Ryunosuke Tanaka</h2>
+    <div class="personagens">
+        <img src="../assets/imgs/haikyuu/ryu.png" alt="">
+        <p>
+            Idade: 17 Anos<br>
+            Altura: 178cm<br>
+            Salto: 320cm<br>
+            Posição: Ponteiro<br>
+            
+        </p>
+    </div>
+</div>
+
+<div id="4" class="hinata" style="display: none;">
+    <h2>Yu Nishinoya</h2>
+    <div class="personagens">
+        <img src="../assets/imgs/haikyuu/nishinoya.png" alt="">
+        <p>
+            Idade: 17 Anos<br>
+            Altura: 159cm<br>
+            Salto: 302cm<br>
+            Posição: Líbero<br>
+            
+        </p>
+    </div>
+</div>
+
+<div id="5" class="hinata" style="display: none;">
+        <h2>Key Tsukishima</h2>
+        <div class="personagens">
+            <img src="../assets/imgs/haikyuu/tsukishima.png" alt="">
+            <p>
+                Idade: 16 Anos<br>
+                Altura: 190cm<br>
+                Salto: 330cm<br>
+                Posição: Central<br>
+                
+            </p>
+        </div>
+    </div>
+    
+    <div id="6" class="hinata" style="display: none;">
+        <h2>Asahi Azumane</h2>
+        <div class="personagens">
+            <img src="../assets/imgs/haikyuu/Asame.png" alt="">
+            <p>
+                Idade: 18 Anos<br>
+                Altura: 184cm<br>
+                Salto: 338cm<br>
+                Posição: Ponteiro<br>
+                
+            </p>
+        </div>
+    </div>
+    
+    <div id="7" class="hinata" style="display: none;">
+        <h2>Daichi Sawamura</h2>
+        <div class="personagens">
+            <img src="../assets/imgs/haikyuu/sugawara.png" alt="">
+            <p>
+            Idade: 18 Anos<br>
+            Altura: 176cm <br>
+            Salto: 320cm<br>
+            Posição: Ponteiro (Capitão)<br>
+            
+        </p>
+    </div>
+</div>
+
+<div id="8" class="hinata" style="display: none;">
+    <h2>Koshi Sugawara</h2>
+    <div class="personagens">
+        <img src="../assets/imgs/haikyuu/sugawara.png" alt="">
+        <p>
+            Idade: 18 Anos<br>
+            Altura: 174cm<br>
+            Salto: 310cm<br>
+            Posição: Levantador (Vice-capitaõ)<br>
+            
+        </p>
+    </div>
+</div>
+
+<div class="footer">
+    <video autoplay muted loop>
+        <source src="../assets/imgs/haikyuu/video_footer.mp4">
+    </video>
+</div>
+
+<div class="seta">
+    <button onclick="proximo()"><img src="../assets/imgs/haikyuu/seta_proximo.png"></button>
+</div>
+
+<div class="voltar">
+    <button onclick="voltar()">Voltar</button>
+</div>
+
+</body>
+</html>
+<script>
+    var indiceAtual = 1; // Começa com o primeiro personagem
+    
+    function proximo() {
+        // Esconde o personagem atual
+        document.getElementById(indiceAtual).style.display = "none";
+        // Incrementa o índice
+        indiceAtual++;
+        // Se atingiu o último personagem, volta ao primeiro
+        if (indiceAtual > 8) {
+            indiceAtual = 1;
+        }
+        // Exibe o próximo personagem
+        document.getElementById(indiceAtual).style.display = "block";
+    }
+
+    function voltar(){
+        window.location = "./cards.html"
+    }
+</script>

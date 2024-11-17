@@ -1,0 +1,113 @@
+/* Tela-Loja */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.header-left {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100vh;
+    width: 10%;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 3px solid #000000;
+    background: linear-gradient(135deg, #FFD700, #FFFFFF, #1E90FF)
+}
+
+.header-left h1 {
+    color: #000000;
+    font-size: x-large;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+.header-left p{
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-left: 22px;
+    border: solid rgb(0, 0, 0) 2px;
+    cursor: pointer;
+}  
+
+.div_container_center {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 90%;
+    position: relative;
+    top: 0;
+    left: 10%;
+    flex-wrap: wrap;
+}
+
+.div_container1 {
+    border-radius: 8px;
+    border: 1px solid rgb(210, 210, 210);
+    color: inherit;
+    display: inline-flex;
+    gap: 8px;
+    flex-direction: column;
+    padding: 10px;
+    text-decoration: none;  
+    position: relative;
+}
+
+.div_container1 img{
+    display: flex;
+    border: solid 2px black;
+    width: 240px;
+    padding: 8px;
+    margin: 0 2px 2px;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.div_container1 span {
+    background-color: rgba(219, 92, 92, 0.692);
+    width: 100%;
+}
+
+.div_container1 label {
+    text-decoration-line: line-through;
+    width: 100%;
+}
+
+.div_preco {
+    background-color: #479238;
+    width: 100%;
+}
+
+.voltar {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+  }
+  .voltar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #004883; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border-radius: 5px;
+    width: 130px;
+  }
